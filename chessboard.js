@@ -23,12 +23,12 @@
     // col will = row so grid is always NxN.
     const col = row;
     // Sets up the chessboard.
-    var chessboard = "";
+    let chessboard = "";
 
     // This iteration of the for loop handles the rows and the new-lines.
-    for (var cnt1 = 0; cnt1 < row; cnt1++) {
+    for (let cnt1 = 0; cnt1 < row; cnt1++) {
         // This iteration handles the columns and decides whether it is a # or a " ".
-        for (var cnt2 = 0; cnt2 < col; cnt2++) {
+        for (let cnt2 = 0; cnt2 < col; cnt2++) {
             if ((cnt1 + cnt2) % 2 === 0) {
                 chessboard += " ";
             } else {
